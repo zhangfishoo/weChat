@@ -1,0 +1,16 @@
+<!--pages/detail/detail.wxml-->
+<view class='detail' wx:for='{{detail}}' wx:key='{{item.id}}'>
+  <image class='daetailImg' src='{{item.img}}'></image>
+  <view class='detailWord'>
+    <text>￥{{item.price}}</text>
+    <text>商品介绍：{{item.title}}</text>
+  </view>
+
+   <view class='btnBar'>
+    <text class='share'>分享</text>
+    <text class='share service'>客服</text>
+    <button class='addToCart' 
+    catchtap='catchTapAddCart'
+    id='{{item.id}}'>加入购物车</button>
+  </view> 
+</view>

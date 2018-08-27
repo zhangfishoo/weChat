@@ -1,0 +1,20 @@
+<!--pages/shopping/shopping.wxml-->
+
+
+<view  wx:for='{{childList}}'>
+    <navigator class='s-child-list' url='/pages/detail/detail?id={{item.id}}'>
+      <view class='s-child-imgbox'>
+        <image class='s-child-img' src='{{item.img}}'></image>
+      </view>
+
+      <view class='s-child-word'>
+        <view class='s-child-title1'>{{item.title}}</view>
+          <view>
+            <text class='s-child-title2'>距你：{{item.title1}} 千米</text>
+            <text class='s-child-title2'>电话：{{item.title2}} </text> 
+          </view>    
+        
+      </view>
+    </navigator>
+</view>
+

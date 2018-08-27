@@ -1,0 +1,26 @@
+<!--pages/cart/cart.wxml-->
+
+<view class='cart-main'>
+  <view class='cart-listItem' wx:for="{{cartList}}">
+    <switch type="checkbox"/>
+    <view class='cart-listItem-image'>
+      <image src='{{item.img}}'></image>
+    </view>
+    <view class='cart-listItem-desc'>
+      <h>{{item.title}}</h>
+      <p>
+        <span>￥{{item.price}}</span>
+        <span>数量：{{item.count}}</span>
+      </p>
+    </view>
+  </view>
+</view>
+
+
+ <view class='cart-btnBar'>
+    <view class="cart-section">
+      <switch type="checkbox"/>
+      全选
+    </view>
+    <view class='cart-pay'>结算</view>
+  </view> 

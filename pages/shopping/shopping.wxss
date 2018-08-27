@@ -1,0 +1,41 @@
+/* pages/shopping/shopping.wxss */
+
+.s-child-list{
+  height: 200rpx;
+  display:flex;
+  flex: 1;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 2rpx;
+  background: #fff;
+}
+.s-child-imgbox{
+  width: 180rpx;
+  height: 140rpx;
+  margin-left: 20rpx;
+}
+.s-child-img{
+  width: 100%;
+  height: 100%;
+}
+.s-child-word{
+  height: 140rpx;
+  margin-left: 20rpx;
+  font-weight: normal;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  
+}
+.s-child-title1{
+  color: #000;
+}
+.s-child-title2{
+width: 310rpx;
+height: 40rpx;
+color: #999;
+font-size: 24rpx;
+display: flex;
+justify-content: space-between;
+
+}

@@ -1,0 +1,82 @@
+<!--pages/index/index.wxml-->
+
+<!--轮播图-->
+  <swiper class='m-swiper'
+    autoplay='{{autoPlay}}' 
+    indicator-dots='{{indicatorDots}}' 
+    interval='{{interval}}'>
+      <swiper-item wx:for='{{imgUrls}}'>
+        <image class='swiper-img' src='{{item}}'/>
+      </swiper-item>
+  </swiper>
+
+<!--列表-->
+
+  <view class='m-miss'>
+    <view class='m-list'>
+    
+      <view class='m-item' wx:for="{{list}}" wx:key='{{item.id}}' >
+      <navigator url="/pages/shopping/shopping?id={{item.id}}"  
+        class='mm-list'>
+        <view>
+          <image class='m-icon' src='{{item.img}}'/>
+        </view>
+        <view>
+          {{item.title}}
+        </view>
+        </navigator>
+      </view>
+      
+    </view>
+  </view>
+
+<!-- 百货头条-->
+  <view class='m-pro'>
+    <text class='m-one'>百货头条</text> 
+    <text class='m-two'>来呀来呀快来呀，大家一起造作呀</text>
+  </view>
+
+<!--优惠券-->
+<view class='m-card' >
+<view wx:for='{{card}}'>
+  <image class='m-card-img' src='{{item}}'/>
+  </view>
+</view>
+
+<!--market-view-->
+<view class='m-market'>
+
+  <view class='market-one'>
+    <text>商场导视</text>
+    <image class='market-img-left' src='/assets/img/daoshi.png'/>
+  </view>
+
+  <view class='market-two'>
+      <view wx:for='{{word}}' class='market-twoo'>
+
+        <view class='m-text m-text1'>
+          <view class='m-text-one'>
+            <text>{{item.title1}}</text>
+          </view>
+
+          <view class='m-text-two m-t-o'>
+            <text>{{item.title2}}</text>
+          </view>
+        </view>
+
+        <view class='m-text'>
+          <image class='market-img' src='{{item.img}}'/>
+        </view>
+      </view>
+  </view>
+</view>
+
+<!--hot-hot-->
+<view class='m-hot'>
+  <view class='m-hot-box'> 
+    <image class='m-hot-img' src='/assets/img/hot.png'/>
+    <text>人气商家</text>
+  </view>
+  <view class='m-hot-under'>
+  </view>
+</view>

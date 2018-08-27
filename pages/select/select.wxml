@@ -1,0 +1,52 @@
+<!--pages/select/select.wxml-->
+
+<!--banner-->
+<swiper class='m-swiper'
+    autoplay='{{autoPlay}}' 
+    indicator-dots='{{indicatorDots}}' 
+    interval='{{interval}}'>
+      <swiper-item wx:for='{{imgUrls}}'>
+        <image class='swiper-img' src='{{item}}'/>
+      </swiper-item>
+  </swiper>
+
+  <!--商品列表-->
+  <view class='m-miss'>
+  <view class='m-list'>
+  <view class='m-item' wx:for="{{list}}" wx:key='{{item.id}}' >
+    <navigator url="/pages/shopping/shopping?id={{item.id}}">
+      {{item.title}}
+    </navigator>
+    </view>
+  </view>
+  </view>
+
+  <view class='s-good'>
+    <view class='s-good-top' wx:for='{{top}}'> 
+        <view class='top-box'>
+          <image class='top-img' src='{{item.img}}'></image>
+        <view class='top-title'>
+          <view>{{item.tit1}}</view>
+          <view >{{item.tit2}}</view>
+        </view>
+       </view>
+    </view>
+
+<!--获取食物列表-->
+  <view  wx:for='{{routes}}' wx:key='{{item.id}}'>
+    <navigator class='s-good-list' url='/pages/detail/detail?id={{item.id}}'>
+      <view class='s-good-imgbox'>
+        <image class='s-good-img' src='{{item.img}}'></image>
+      </view>
+
+      <view class='s-good-word'>
+        <view class='s-good-title1'>{{item.title1}}</view>
+        <view class='s-good-title2'>
+          <text>{{item.title2}}</text>
+          <text>|</text>
+          <text>人均{{item.price}}元 </text>     
+      </view>
+      </view>
+</navigator>
+    </view>
+  </view>

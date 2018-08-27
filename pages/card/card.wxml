@@ -1,0 +1,33 @@
+<!--pages/card/card.wxml-->
+
+<!--Tab导航切换-->
+<view class='card-nav'>
+  <view class='card-li' catchtap='catchShowCouponsBtn'>领取优惠</view>
+  <view class='card-li' catchtap='catchShowActivityBtn'>商场活动</view>
+</view>
+
+<!--优惠券列表-->
+<view class='card-main'>
+  <view class='card-box' wx:for='{{cardList}}' wx:if='{{isShowCoupons}}'>
+    <image class='card-img' src='{{item.img}}'></image>
+  </view>
+
+
+  <!--活动页列表-->
+  <view class='s-activity-list' wx:for='{{activityList}}' wx:if='{{isShowActivity}}'>
+
+      <view class='s-activity-imgbox'>
+        <image class='s-activity-img' src='{{item.img}}'></image>
+      </view>
+
+      <view class='s-activity-word'>
+        <view class='s-activity-title1'>{{item.title}}</view>
+        <view class='s-activity-title2'>
+          <text>{{item.date}}</text>
+          <text>{{item.time}} </text>     
+        </view>
+      </view>
+
+    </view>
+  </view>
+

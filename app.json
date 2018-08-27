@@ -1,0 +1,56 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/select/select",
+    "pages/card/card",
+    "pages/cart/cart",
+    "pages/mine/mine",
+    "pages/shopping/shopping",
+    "pages/info/info",
+    "pages/detail/detail"
+    
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor":"#FFC0CB",
+    "navigationBarTitleText": "不逛不痛快",
+    "navigationBarTextStyle":"black"
+  },
+
+"tabBar": {
+  "selectedColor":"#ffc0cb",
+  "list": [
+    {
+      "pagePath": "pages/index/index",
+      "text": "首页",
+      "iconPath":"./assets/img/home.png",
+      "selectedIconPath":"./assets/img/home-selected.png"
+    },
+    {
+      "pagePath": "pages/select/select",
+      "text": "精选",
+      "iconPath": "./assets/img/clear.png",
+      "selectedIconPath": "./assets/img/clear-selected.png"
+    },
+    {
+      "pagePath": "pages/card/card",
+      "text": "优惠券",
+      "iconPath": "./assets/img/card.png",
+      "selectedIconPath": "./assets/img/card-selected.png"
+      },
+      {
+        "pagePath": "pages/cart/cart",
+        "text": "购物车",
+        "iconPath": "./assets/img/cart.png",
+        "selectedIconPath": "./assets/img/cart-selected.png"
+      },
+    {
+      "pagePath": "pages/mine/mine",
+      "text": "我",
+      "iconPath": "./assets/img/mine.png",
+      "selectedIconPath": "./assets/img/mine-selected.png"
+    }
+  ]
+
+}
+}

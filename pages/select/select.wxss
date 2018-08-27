@@ -1,0 +1,101 @@
+/* pages/select/select.wxss */
+
+/*banner*/
+.m-swiper{
+  width: 100%;
+  height: 320rpx;
+}
+.swiper-img{
+  width: 100%;
+  height: 100%;
+}
+
+/*list*/
+.m-miss{
+  height: 180rpx;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.m-list{
+  display: flex;
+  justify-content: space-around;
+}
+.m-item{
+  width: 20%;
+  height: 80rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 28rpx;
+  font-weight: normal;
+  border-radius: 40rpx;
+  border:1px solid pink;
+}
+
+
+/*百货优质选*/
+.s-good-top{
+  margin-top:2rpx;
+  height: 120rpx;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+}
+.top-box{
+  width: 500rpx;
+  display: flex;
+  justify-content: space-around;
+}
+.top-img{
+  margin-top: 20rpx;
+  width: 160rpx;
+  height: 60rpx;
+}
+.top-title{
+  margin-top: 10rpx;
+  width: 300rpx;
+  height: 50rpx;
+  font-size: 28rpx
+}
+
+/*商品列表*/
+.s-good-list{
+  height: 200rpx;
+  display:flex;
+  flex: 1;
+  /* border:1rpx solid red; */
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 2rpx;
+  background: #fff;
+}
+.s-good-imgbox{
+  width: 180rpx;
+  height: 140rpx;
+  margin-left: 20rpx;
+}
+.s-good-img{
+  width: 100%;
+  height: 100%;
+}
+.s-good-word{
+  height: 140rpx;
+  margin-left: 20rpx;
+  font-weight: normal;
+  
+}
+.s-good-title1{
+  color: #000;
+}
+.s-good-title2{
+width: 310rpx;
+height: 80rpx;
+color: #999;
+font-size: 28rpx;
+display: flex;
+justify-content: space-between;
+
+}
